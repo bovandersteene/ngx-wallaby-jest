@@ -1,0 +1,27 @@
+{
+  "name": "ngx-wallaby-jest",
+  "version": "0.0.1",
+  "description": "Make wallaby working with jest and angular",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bovandersteene/ngx-wallaby-jest.git"
+  },
+  "keywords": [
+    "angular",
+    "jest",
+    "wallaby"
+  ],
+  "author": "Bo Vandersteene (bo@reibo.be)",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bovandersteene/ngx-wallaby-jest/issues"
+  },
+  "homepage": "https://github.com/bovandersteene/ngx-wallaby-jest#readme",
+  "dependencies": {
+    "fs": "0.0.1-security"
+  }
+}
