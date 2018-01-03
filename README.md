@@ -2,6 +2,10 @@
 With the use of [jest-preset-angular](https://www.npmjs.com/package/jest-preset-angular) ' we can run our angular test through jest.
 But we still have a nice tool named: [wallabyjs](https://wallabyjs.com/). With this plugin you can add jest to your angular implementation
 
+Described implementation: [Angular + Jest + Wallabyjs why it is the ideal combination! And how to configure](https://medium.com/@bo.vandersteene/angular-jest-wallabyjs-why-it-is-the-ideal-combination-and-how-to-configure-b4cbe2eff4b3)
+
+Example: [angular-cli-jest-wallaby](https://github.com/bovandersteene/angular-cli-jest-wallaby)
+
 ## How to use
 ``npm install ngx-wallaby-jest``
 
