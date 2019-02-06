@@ -1,0 +1,36 @@
+# Javascript Node CircleCI 2.0 configuration file
+#
+# Check https://circleci.com/docs/2.0/language-javascript/ for more details
+#
+version: 2
+
+anchor_1: &defaults
+  working_directory: /tmp/reibo
+  docker:
+    - image: circleci/node:10.9.0-stretch-browsers
+
+
+jobs:
+
+  prod-publish:
+    <<: *defaults
+    steps:
+      - checkout
+      - run: echo "//registry.npmjs.org/:_authToken=$NPM_TOKEN" >> ~/.npmrc
+      - run:
+          name: pre-publish
+          command: cp README.md dist/reibo/ngrx-mock-test/README.md && cd dist/reibo/ngrx-mock-test
+      - run:
+          name: publish
+          command: npm publish --access=public --registry=https://registry.npmjs.org/ --folder dist/reibo/ngrx-mock-test
+     #
+     # - run: npm run lib:publish
+
+workflows:
+  version: 2
+  build-deploy:
+    jobs:
+      - prod-publish:
+          filters:
+            branches:
+              only: master
