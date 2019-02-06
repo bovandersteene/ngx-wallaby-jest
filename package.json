@@ -1,6 +1,6 @@
 {
   "name": "ngx-wallaby-jest",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "description": "Make wallaby working with jest and angular",
   "main": "index.js",
   "scripts": {
@@ -20,8 +20,5 @@
   "bugs": {
     "url": "https://github.com/bovandersteene/ngx-wallaby-jest/issues"
   },
-  "homepage": "https://github.com/bovandersteene/ngx-wallaby-jest#readme",
-  "dependencies": {
-    "fs": "0.0.1-security"
-  }
+  "homepage": "https://github.com/bovandersteene/ngx-wallaby-jest#readme"
 }

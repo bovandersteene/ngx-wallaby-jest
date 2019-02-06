@@ -13,6 +13,7 @@ const ngxWallabyJest = function (file, done) {
     if (containsTemplateUrl > -1) {
         const path = file.path.substring(0, file.path.indexOf('.ts')) + '.html';
         fs.readFile(path, 'utf8', function (err, data) {
+            console.log(data)
             if (err) {
                 return console.error('Component template not found for: ', file.path, path);
             }
